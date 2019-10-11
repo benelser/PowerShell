@@ -24,4 +24,5 @@ param (
        break
     }
 
-Write-host -noNewline "*****" -ForegroundColor Yellow; Write-Host " Your EncodedCommand is ready in $env:USERPROFILE\Work Folders\Desktop\EncodedCommand.txt " -NoNewline -ForegroundColor Green; Write-host "*****`n`n" -ForegroundColor Yellow;
+Write-host -noNewline "*****" -ForegroundColor Yellow; Write-Host " Your EncodedCommand is ready in $env:USERPROFILE\Desktop\EncodedCommand.txt " -NoNewline -ForegroundColor Green; Write-host "*****`n`n" -ForegroundColor Yellow;
+notepad.exe $env:USERPROFILE\Desktop\EncodedCommand.txt
