@@ -8,6 +8,9 @@ Example usage:
 
 C:\temp\VulnDB.ps1 -PathToCSV "C:\temp\boacve.csv"
 
+Assumptions:
+CSV has a header row named cve
+
 #>
 
 param
