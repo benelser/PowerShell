@@ -32,7 +32,6 @@ foreach ($cve in $cves) {
     if ([String]::IsNullOrWhiteSpace($cve)) {
         continue
     }
-    $cve
     $uri = "https://www.rapid7.com/db/?q=$cve&type=nexpose"
     $response = Invoke-WebRequest -Uri $uri
     $hit = $response.Content | Select-String "No results"
