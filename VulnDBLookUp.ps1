@@ -1,10 +1,13 @@
 <#
 Does a eve lookup against vuln db @rapid7.com/db parsing the raw output of the html on 'No Result'
 
+Outputs cve's not found in db to file "cvesNotFound.txt" in the pwd
+
 Example usage:
 ./VulnDB.ps1 -PathToCSV ./boacve.csv
 
 C:\temp\VulnDB.ps1 -PathToCSV "C:\temp\boacve.csv"
+
 #>
 
 param
