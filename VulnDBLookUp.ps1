@@ -1,5 +1,5 @@
 <#
-Does a eve lookup against vuln db @rapid7.com/db parsing the raw output of the html on 'No Result'
+Does a cve lookup against vuln db @rapid7.com/db parsing the raw output of the html on 'No Result'
 
 Outputs cve's not found in db to file "cvesNotFound.txt" in the pwd
 
