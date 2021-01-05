@@ -98,7 +98,7 @@ function Get-SplunkJobResults {
         [string]$JobSid,
         [System.Collections.Hashtable]$SplunkSession
     )
-
+    $jobep = "/services/search/jobs"
     $res = (Invoke-WebRequest -Uri ($RootUrl + $jobep + "/" + $JobSid + "/results") -Method Get -Headers $SplunkSession -Body @{"output_mode" = "json"}).Content | ConvertFrom-Json 
     $res.results
 }
