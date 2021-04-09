@@ -2,7 +2,7 @@ $list = @(1,2,3,3)
 
 function Get-AllThrees {
     param (
-        # This is the contect of the entity being processed 
+        # This is the context of the entity being processed 
         [Parameter(ValueFromPipeline=$true)]
         [object]$num
     )
